@@ -2,6 +2,7 @@ package org.educa.dao;
 
 import org.educa.entity.ReservaEntity;
 import org.educa.entity.ReservaWithRelations;
+import org.educa.wrappers.InfoPasajero;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -18,4 +19,5 @@ public interface ReservaDao {
     List<ReservaEntity> findAll();
 
     List<ReservaWithRelations> getReservasPrice(BigDecimal cantidad);
+
 }

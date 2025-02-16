@@ -15,6 +15,7 @@ import org.educa.entity.ReservaEntity;
 import org.educa.entity.ReservaWithRelations;
 import org.educa.entity.VueloEntity;
 import org.educa.settings.DatabaseSettings;
+import org.educa.wrappers.InfoPasajero;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

@@ -1,5 +1,7 @@
 package org.educa.service;
 
+import org.educa.dao.PasajeroDao;
+import org.educa.dao.PasajeroDaoImpl;
 import org.educa.dao.ReservaDao;
 import org.educa.dao.ReservaDaoImpl;
 import org.educa.entity.ReservaEntity;
@@ -13,13 +15,15 @@ import java.util.List;
 public class ReservaService {
 
     private final ReservaDao reserDao = new ReservaDaoImpl();
+    private final PasajeroDao pasajeroDao = new PasajeroDaoImpl();
 
     public List<ReservaEntity> findReservasByVueloId(Integer vueloId) {
         return null;
     }
 
     public InfoPasajero findReservasByPasaporte(String pasaporte) {
-        return null;
+
+        return pasajeroDao.findReservasPasaport(pasaporte);
     }
 
     public List<ReservaWithRelations> findReservasByCantidad(BigDecimal cantidad) {
